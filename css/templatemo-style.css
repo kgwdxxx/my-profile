@@ -1,10 +1,3 @@
-/*
-
-Lavish HTML CSS Template
-
-https://templatemo.com/tm-458-lavish
-		
-*/
 @font-face {
     font-family: 'Regular';
     src: url('../fonts/SamsungSans-Regular.ttf') format('truetype');
@@ -18,8 +11,18 @@ body
 	font-weight: 400;
 }
 
+.designer {
+    color: #999; 
+    text-decoration: none; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
 
-/* start all section */
+.designer:hover {
+    color: #D43F52  ; 
+    transform: scale(1.1);
+    text-decoration: underline; 
+}
+
 #home,
 #home .fp-slide,
 #home .fp-tableCell,
@@ -173,17 +176,21 @@ h1,h2,h3,h4,h5
 /* end simpletextrotator */
 
 /* start home */       
-#home
-	{
-        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header.jpg");
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-top: 120px;
-        padding-bottom: 140px;
-        text-align: center;
-       
-	}
+#home {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header.jpg");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures the section is at least 100% of the viewport height */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any padding */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
     #home {
         align-items:baseline;
     }
