@@ -1,47 +1,11 @@
-/* Light Mode Styles (default) */
-body {
-    background-color: #ffffff;
-    color: #000000;
+/* Set up the basic fade-in animation with a faster speed */
+.animated-text span {
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;  /* Faster fade-in time */
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-    color: #000000;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #ffffff; /* Light background */
-    color: #000000; /* Dark text */
-}
-
-body.dark-mode p, 
-body.dark-mode h1, 
-body.dark-mode h2, 
-body.dark-mode h3, 
-body.dark-mode h4, 
-body.dark-mode h5, 
-body.dark-mode h6 {
-    color: #000000; /* Dark text */
-}
-
-/* Toggle Button Styles */
-.dark-mode-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-}
-
-.dark-mode-toggle button {
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #000000;
-}
-
-.dark-mode-toggle button:focus {
-    outline: none;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
